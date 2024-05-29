@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background-color: #111;
+}
+
+header img {
+    width: 100px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.contact {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact h2 {
+    margin: 0;
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+.contact button {
+    background-color: #0f0;
+    border: none;
+    padding: 10px 20px;
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.images img {
+    width: 24%;
+    border-radius: 10px;
+}
+
+.brands {
+    padding: 20px;
+}
+
+.brand-logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.brand-logos img {
+    width: 15%;
+}
+
+.localizacion {
+    padding: 20px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #111;
+}
+
+footer img {
+    width: 30px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+footer p {
+    margin: 10px 0 0;
+}
+
+@media screen and (max-width: 500px) {
+    .images, .brand-logos {
+        flex-direction: column;
+    }
+
+    .images img, .brand-logos img {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .contact, .localizacion, .brands {
+        padding: 10px;
+    }
+
+    .contact button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer img {
+        margin: 10px 0;
+    }
+}
