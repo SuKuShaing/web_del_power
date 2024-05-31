@@ -1,29 +1,87 @@
-body {
-    font-family: Arial, sans-serif;
+/* ********************************************************** */
+/* **************** Reset estilos por defectos ************** */
+/* ********************************************************** */
+
+
+* {
+    /* Include padding and border in si ze calculation. */
+    box-sizing: border-box;
+    /* Position based on immediate parent and al low adjusting top/right/bottom/left */
+    position: relative;
+    /* Prevent grid and flex items from spilling out of their container. */
+    min-width: 0;
+    
     margin: 0;
     padding: 0;
-    background-color: #000;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+/* resetear el tamaño del texto para poder trabajar con Rem y que el valor rem sea igual al resultado en px*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    /* Ensure that the body fil Is the entire viewport. */
+    min-height: 100dvh;
+}
+
+h1, h2, h3, h4 {
+    /* Balance headings across multiple lines into an ven block. */
+    text-wrap: balance;
+}
+p {
+    /* Prevent text orphans (single words on last line. */
+    text-wrap: pretty;
+}
+
+
+/* ********************************************************** */
+/* ********************** CSS de la web ********************* */
+/* ********************************************************** */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    font-family: "Oswald", sans-serif;
+    background: linear-gradient(180deg, #060710 50%, #0A0D1E 100%);
     color: #fff;
     text-align: center;
+
+    max-width: 1440px;
+    margin: 20px auto;
 }
 
 header {
-    padding: 20px;
-    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 header img {
     width: 100px;
+    margin: 0 20px;
 }
 
+h1 {
+    font-size: 4rem;
+    margin: 20px 0;
+}
+
+/* **************************** Hero **************************** */
+
 .main-content {
-    padding: 20px;
+    display: inline-flex;
+    align-items: flex-start;
 }
 
 .contact {
-    background-color: #222;
-    padding: 20px;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact h2 {
@@ -46,8 +104,11 @@ header img {
 
 .images {
     display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
+    width: 501px;
+    align-items: flex-end;
+    align-content: flex-end;
+    gap: 24px 20px;
+    flex-wrap: wrap;
 }
 
 .images img {
@@ -55,22 +116,96 @@ header img {
     border-radius: 10px;
 }
 
+/* *************************** Marcas *************************** */
+
 .brands {
     padding: 20px;
 }
 
-.brand-logos {
-    display: flex;
-    justify-content: space-around;
+.brands h2 {
+    font-size: 3.2rem;
 }
 
-.brand-logos img {
-    width: 15%;
+.s-slider{
+    /* max-width: 1400px; */
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap; /* Elimina el espacio entre los slides y los también los saltos de linea*/
 }
+
+.s-slider .s-slider-track{
+    display: flex;
+    animation: scroll 30s linear infinite;
+    -webkit-animation: scroll 30s linear infinite;
+    width: calc(200px * 10 * 2); /* (200px * numero de slides * 2) el 2 es porque están duplicada la lista de marcas para dar el efecto*/ 
+    /*el ancho es el total deslice por su espacio*/
+    align-items: center;
+}
+/* 
+comenté esto porque no queda bien con el degradado
+.s-slider:before,
+.s-slider:after{
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    content: '';
+    z-index: 2;
+}
+
+.s-slider::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), white);
+}
+
+.s-slider:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), white);
+} */
+
+.s-slider:hover .s-slider-track{
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+
+.s-slider .slide{
+    width: 220px;
+    padding: 20px;
+}
+
+.s-slider .slide img{
+    width: 100%;
+    /* Que la imagen sea transparente */
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    /* filter: drop-shadow(0 0 0px white);
+    -webkit-filter: drop-shadow(0 0 0px white); */
+}
+
+@keyframes scroll {
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-200px * 10));
+        /*200px*numerodeslidesreal*/-webkit-transform: translateX(calc(-200px * 31));
+        -webkit-transform: translateX(calc(-200px * 10));
+        -moz-transform: translateX(calc(-200px * 10));
+        -ms-transform: translateX(calc(-200px * 10));
+        -o-transform: translateX(calc(-200px * 10));
+}
+}
+
+/* ***************************** Mapa ***************************** */
 
 .localizacion {
     padding: 20px;
 }
+
+/* **************************** Footer **************************** */
 
 footer {
     padding: 20px;
@@ -86,6 +221,11 @@ footer img {
 footer p {
     margin: 10px 0 0;
 }
+
+/* Whatsapp flotante */
+
+
+/* Media Queries */
 
 @media screen and (max-width: 500px) {
     .images, .brand-logos {
