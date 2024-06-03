@@ -187,6 +187,7 @@ h1 {
 
 .brands h2 {
     font-size: var(--font-zise-h2);
+    margin-bottom: 24px;
 }
 
 .s-slider{
@@ -271,10 +272,12 @@ comenté esto porque no queda bien con el degradado
 
 .localizacion h2 {
     font-size: var(--font-zise-h2);
+    margin-bottom: 20px;
 }
 
 .localizacion p {
     font-size: var(--font-zise-p);
+    margin-bottom: 16px;
 }
 
 /* **************************** Footer **************************** */
@@ -285,11 +288,11 @@ footer {
 
 footer img {
     width: 50px;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
 footer p {
-    margin: 10px 0;
+    margin: 12px 0;
     font-size: var(--font-zise-p);
 }
 

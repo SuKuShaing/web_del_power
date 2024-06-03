@@ -5,7 +5,7 @@
 - [X] Maquetación principal
 - [X] Estilos al carrucel
 - [X] Estilos del footer
-- [ ] Separar espacios (el espaciado de las secciones)
+- [X] Separar espacios (el espaciado de las secciones)
 - [ ] Botón de whatsapp flotando
 - [ ] Links a todo lo que tiene que llevar
 - [ ] Hacerlo responsivo
