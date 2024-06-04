@@ -7,6 +7,6 @@
 - [X] Estilos del footer
 - [X] Separar espacios (el espaciado de las secciones)
 - [X] Botón de whatsapp flotando
-- [ ] Links a todo lo que tiene que llevar
+- [X] Links a todo lo que tiene que llevar
 - [ ] Hacerlo responsivo
 - [ ] Hacer funcional el slider
