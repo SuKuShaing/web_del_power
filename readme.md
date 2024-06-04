@@ -1,12 +1,14 @@
 # Proyecto para la web de envíos power
 
 ## Qué falta
-- [X] Estilos al header
 - [X] Maquetación principal
+- [X] Estilos al header
 - [X] Estilos al carrucel
 - [X] Estilos del footer
 - [X] Separar espacios (el espaciado de las secciones)
 - [X] Botón de whatsapp flotando
 - [X] Links a todo lo que tiene que llevar
-- [ ] Hacerlo responsivo
+- [X] Hacerlo responsivo para mobile
+- [ ] Hacerlo responsivo para tablet
+- [ ] colocar la fecha mediante js en el footer en el texto derechos reservados
 - [ ] Hacer funcional el slider
