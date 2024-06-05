@@ -11,6 +11,7 @@
 - [X] Hacerlo responsivo para mobile
 - [X] Hacerlo responsivo para tablet
 - [X] colocar la fecha mediante js en el footer en el texto derechos reservados
+- [ ] Igual el tamaño de las imágenes
 - [ ] Hacer funcional el slider
 - [ ] Desplegar en Hosting
 - [ ] Ver como hacer que las DNS estén en Cloudflare para usarlo de CDN
