@@ -94,8 +94,9 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    /* margin-top: 10px;
+    margin-bottom: 20px; */
+    margin: 10px 20px 20px;
 }
 
 .contact {
@@ -235,11 +236,18 @@ h1 {
 
 .s-slider .slide img{
     width: 100%;
-    /* Que la imagen sea transparente */
-    filter: invert(100%);
-    -webkit-filter: invert(100%);
-    /* filter: drop-shadow(0 0 0px white);
-    -webkit-filter: drop-shadow(0 0 0px white); */
+    filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1);
+    
+    /*filter: brightness(100%);
+    -webkit-filter: brightness(0) invert(1);*/
+    
+    /*filter: invert(100%);
+    -webkit-filter: invert(100%);*/
+    
+    /*filter: drop-shadow(0 0 0px white);
+    -webkit-filter: drop-shadow(0 0 0px white);
+    */
 }
 
 @keyframes scroll {
@@ -320,18 +328,19 @@ footer .creado a {
 
 /* Media Queries Tablet entre 501 y 900 px*/
 
-@media screen and (min-width: 501px) and (max-width: 900px){
-    /* body{
-        background: red
-    }; */
+@media screen and (min-width: 751px) and (max-width: 900px){
+    /* Hero */
+    .images {
+        min-width: 380px;
+    }
 }
 
 
 /* Media Queries Mobile */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
     body {
-        margin: 0px auto;
+        margin: 10px auto;
     }
 
     /* Header */
@@ -354,7 +363,7 @@ footer .creado a {
     }
 
     .contact {
-        margin-top: 24px;
+        margin-top: 28px;
     }
 
     .contact h2 {
@@ -365,5 +374,20 @@ footer .creado a {
         padding: 20px 40px;
         color: #060710;
         font-size: 24px;
+    }
+
+    /* Marcas */
+    .brands h2 {
+        padding: 0 10px;
+    }
+    
+    /* Mapa */
+    .localizacion h2, .localizacion p {
+        padding: 0 10px;
+    }
+
+    /* Footer */
+    footer p, footer .creado {
+        padding: 0 10px;
     }
 }

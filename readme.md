@@ -9,6 +9,6 @@
 - [X] Botón de whatsapp flotando
 - [X] Links a todo lo que tiene que llevar
 - [X] Hacerlo responsivo para mobile
-- [ ] Hacerlo responsivo para tablet
+- [X] Hacerlo responsivo para tablet
 - [ ] colocar la fecha mediante js en el footer en el texto derechos reservados
 - [ ] Hacer funcional el slider
