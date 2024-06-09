@@ -83,7 +83,7 @@ header img {
 h1 {
     font-size: var(--font-zise-h1);
     margin: 20px 0;
-    width: 95%;
+    /* width: 95%; */
 }
 
 /* **************************** Hero **************************** */
@@ -97,13 +97,15 @@ h1 {
     /* margin-top: 10px;
     margin-bottom: 20px; */
     margin: 10px 20px 20px;
+    position: relative;
 }
 
 .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 500px;
+    max-width: 800px;
+    min-width: 300px;
     padding: 0  20px;
 }
 
@@ -158,15 +160,116 @@ h1 {
 /* Galería de imágenes */
 
 .images {
+    max-width: 500px;
+    max-width: 800px;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+
+.middle {
+    /* display: flex;
+    flex-direction: column; */
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.img-principal {
+    width: 400%; 
+    /* 100% * cantidad de imágenes */
+    /* 100% * 4 imágenes */
+
+    /* height: 100%; */
+    display: flex;
+    /* overflow: hidden; */
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.carrucel-slide {
+    width: 25%;
+    /* 100% / cantidad de imágenes */
+
+    transition: 0.6s ;
+    -webkit-transition: 0.6s ;
+    -moz-transition: 0.6s ;
+    -ms-transition: 0.6s ;
+    -o-transition: 0.6s ;
+}
+
+.carrucel-slide img {
+    width: 100%;
+    /* height: 100%; */
+    border-radius: 15px;
+}
+
+#r1:checked ~ .s1 {
+    /* mueve el primer slide a la izquierda */
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+    /* mueve el primer slide a la izquierda y los demás al estar en flex se mueven con él hacia el lado */
+    margin-left: -25%;
+}
+
+#r3:checked ~ .s1 {
+    /* mueve el primer slide a la izquierda y los demás al estar en flex se mueven con él hacia el lado */
+    margin-left: -50%;
+}
+
+#r4:checked ~ .s1 {
+    /* mueve el primer slide a la izquierda y los demás al estar en flex se mueven con él hacia el lado */
+    margin-left: -75%;
+}
+
+.navegation-carrucel {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+.bar{
+    /* max-width: 50px;
+    min-width: 30px; */
+    width: 10%;
+    height: 5%;
+    /* height: 20px; */
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    margin: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover{
+    background: #fff;
+}
+
+
+
+/*  
+.images {
     display: flex;
     flex-direction: column;
-    /* width: 100%; */
+    /* width: 100%;
 }
 
 .images .img-principal {
     max-width: 700px;
     max-height: 400px;
-    /* flex-grow: 3; */
+    /* flex-grow: 3; 
 
     display: flex;
     aspect-ratio: 16/9;
@@ -178,7 +281,7 @@ h1 {
 .images .img-principal img{
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
+    /* object-fit: cover;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -208,6 +311,7 @@ h1 {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+*/
 
 /* *************************** Marcas *************************** */
 
@@ -267,7 +371,8 @@ h1 {
     }
     100%{
         transform: translateX(calc(-200px * 10));
-        /*200px*numerodeslidesreal*/-webkit-transform: translateX(calc(-200px * 31));
+        /*200px*numerodeslidesreal*/
+        -webkit-transform: translateX(calc(-200px * 31));
         -webkit-transform: translateX(calc(-200px * 10));
         -moz-transform: translateX(calc(-200px * 10));
         -ms-transform: translateX(calc(-200px * 10));
@@ -338,17 +443,20 @@ footer .creado a {
 
 /* Media Queries Tablet entre 501 y 900 px*/
 
-@media screen and (min-width: 751px) and (max-width: 900px){
-    /* Hero */
-    .images {
-        min-width: 380px;
+/* @media screen and (min-width: 751px) and (max-width: 1150px){
+    body {
+        background: red;
     }
-}
+    /* Hero
+    .images {
+        /* max-width: 600px;
+    }
+} */
 
 
 /* Media Queries Mobile */
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
     body {
         margin: 10px auto;
     }
@@ -384,6 +492,11 @@ footer .creado a {
         padding: 20px 40px;
         color: #060710;
         font-size: 24px;
+    }
+
+    .bar {
+        width: 15%;
+        height: 8%;
     }
 
     /* Marcas */
