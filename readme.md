@@ -19,7 +19,7 @@
 - [X] disminuir el padding que tiene el carrusel  
 - [X] Colocar el lazy load a las imágenes
 - [X] Hacer rotar el slider automáticamente mediante js
-- [ ] Que se reinicie el tiempo si el usuario hace click
+- [X] Que se reinicie el tiempo si el usuario hace click
 - [ ] Hacerle la meta descripción
 - [ ] Colocar los metadatos que van en el header para que al compartir la web por redes sociales se despliegue una imagen
 - [ ] Colocar los datos estructurados, el schema (
