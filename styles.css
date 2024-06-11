@@ -318,7 +318,7 @@ input[name="r"]{
 /* ***************************** Mapa ***************************** */
 
 .localizacion {
-    margin-top: 90px;
+    margin-top: 80px;
     /* padding: 20px; */
 }
 
@@ -399,11 +399,12 @@ footer .creado a {
     /* Header */
 
     header img {
+        width: 90px;
         margin: 0 10px;
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 3.2rem;
         max-width: 70%;;
     }
 
@@ -411,7 +412,7 @@ footer .creado a {
 
     .main-content {
         flex-direction: column-reverse;
-        padding: 0 10px;
+        /* padding: 0 10px; */
         margin-top: 20px;
     }
 
