@@ -21,8 +21,8 @@
 - [X] Hacer rotar el slider automáticamente mediante js
 - [X] Que se reinicie el tiempo si el usuario hace click
 - [X] Corregir el tema del hover que se queda pegado en celular
-- [ ] Hacerle la meta descripción
-- [ ] Colocar los metadatos que van en el header para que al compartir la web por redes sociales se despliegue una imagen
+- [X] Hacer la meta descripción
+- [X] Colocar los metadatos que van en el header para que al compartir la web por redes sociales se despliegue una imagen
 - [ ] Colocar los trakers de google Analytics
 - [ ] Colocar los trakers de Clarity
 - [ ] Colocar los trakers de Search Console
