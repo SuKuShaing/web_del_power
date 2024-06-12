@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./celular.css" media="(max-width: 950px)">
+    <!-- Es obligatorio que el breackpoint secundario vaya a debajo del primero -->
+    <!-- puesto que primero tiene que cargar los primeros estilos, el segundo es opcional si cumple el media -->
+    <!-- solo si es superior a 950px va descargar la 2da hoja de estilo  -->
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./img/Iconos/logo power sin bordes.png">
+
     <!-- Color al Navegador -->
 	<meta name="theme-color" content="#060710" />
+    
     <!-- SEO -->
     <title>Personal Shopper | Proveedor directo desde Miami, Proveedor de Ropa | Envios Power Miami</title>
     <meta name="description" content="Somos Personal Shopper, compramos ropa para ti directamente en Miami y la traemos a Chile, puedes solicitar una prenda en especifico o ir a nuestro local y ver lo que traemos directamente desde las tiendas oficiales">
     <meta name="keywords" content="Personal, Shopper, envíos, envios, casilla, latinoamerica, chile, importadores, proveedores">
+    
     <!-- RRSS -->
     <meta property="og:url" content="https://enviospowermiami.cl/" />
     <meta property="og:title" content="Personal Shopper | Proveedor directo desde Miami, Proveedor de Ropa" />
@@ -146,8 +156,11 @@
         <a target="_blank" href="https://www.instagram.com/enviospowermiamioficial/">
             <img loading="lazy" src="./img/Iconos/instagram.svg" alt="Instagram">
         </a>
-        <p>&copy; <span id="year"></span> todos los derechos reservados, Enviospowermiami.cl</p>
-        <p class="creado">Sitio web desarrollado por <a target="_blank" href="https://cl.linkedin.com/in/sebastiansanhuezatapia">Sebastián sanhueza Tapia</a></p>
+        <p class="derechos">&copy; <span id="year"></span> todos los derechos reservados, Enviospowermiami.cl</p>
+        <div class="autor">
+            <p class="creado">Sitio web desarrollado por </p>
+            <a target="_blank" href="https://cl.linkedin.com/in/sebastiansanhuezatapia">Sebastián Sanhueza Tapia</a>
+        </div>
     </footer>
     <a id="btn-whatsapp" target="_blank" href="https://wa.me/17866857978?text=Desde%20la%20web%0Ahttps://enviospowermiami.cl/%0AHola,%20me%20gustar%C3%ADa%20saber%20...">
         <img loading="lazy" src="./img/Iconos/whatsapp.svg" alt="WhatsApp">

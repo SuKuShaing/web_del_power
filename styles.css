@@ -352,9 +352,17 @@ footer .creado {
     font-size: var(--font-zise-minimo);
 }
 
-footer .creado a {
-    color: #fff;
+footer .autor {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
 
+footer .autor a {
+    color: #fff;
+    font-size: var(--font-zise-minimo);
 }
 /* *********************** Whatsapp flotante *********************** */
 
@@ -368,99 +376,4 @@ footer .creado a {
 
 #btn-whatsapp img {
     width: 100%;
-}
-
-
-/* ********************************************************** */
-/* ********************** Media Queries ********************* */
-/* ********************************************************** */
-
-
-/* Media Queries Tablet entre 501 y 900 px*/
-
-/* @media screen and (min-width: 751px) and (max-width: 1150px){
-    body {
-        background: red;
-    }
-    /* Hero
-    .images {
-        /* max-width: 600px;
-    }
-} */
-
-
-/* Media Queries Mobile */
-
-@media screen and (max-width: 950px) {
-    body {
-        margin: 10px auto;
-    }
-
-    /* Header */
-
-    header img {
-        width: 90px;
-        margin: 0 10px;
-    }
-
-    h1 {
-        font-size: 3.2rem;
-        max-width: 70%;;
-    }
-
-    /* Hero */
-
-    .main-content {
-        flex-direction: column-reverse;
-        /* padding: 0 10px; */
-        margin-top: 20px;
-    }
-
-    .contact {
-        margin-top: 28px;
-    }
-
-    .contact h2 {
-        margin-bottom: 12px;
-    }
-
-    .contact button {
-        padding: 20px 40px;
-        color: #060710;
-        /* font-size: 2rem; */
-    }
-
-    .bar {
-        width: 15%;
-        height: 8%;
-    }
-
-    .bar:hover {
-        animation: fadeIn 1s forwards, fadeOut 2s 1s forwards;
-    }
-
-    @keyframes fadeIn {
-        0% { background: #fff; }
-        100% { background: #fff; }
-    }
-
-    @keyframes fadeOut {
-        0% { background: #fff; }
-        100% { background: transparent; }
-    }
-
-    /* Marcas */
-    .brands h2 {
-        padding: 0 10px;
-    }
-    
-    /* Mapa */
-    .localizacion h2, .localizacion p {
-        padding: 0 10px;
-    }
-
-    /* Footer */
-    footer p, footer .creado {
-        padding: 0 10px;
-    }
 }
