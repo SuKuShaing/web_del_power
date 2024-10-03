@@ -24,7 +24,7 @@
 - [X] Hacer la meta descripción
 - [X] Colocar los metadatos que van en el header para que al compartir la web por redes sociales se despliegue una imagen
 - [X] Colocar los trakers de google Analytics
-- [ ] Colocar los trakers de Clarity
+- [X] Colocar los trakers de Clarity
 - [ ] Colocar los trakers de Search Console
 - [ ] Colocar los trakers de tarjeta en el business google
 - [ ] Colocar los datos estructurados, el schema (
