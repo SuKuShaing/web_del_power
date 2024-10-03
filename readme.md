@@ -26,7 +26,7 @@
 - [X] Colocar los trakers de google Analytics
 - [X] Colocar los trakers de Clarity
 - [X] Colocar los trakers de Search Console
-- [ ] Colocar los trakers de tarjeta en el business google
+- [X] Colocar los trakers de tarjeta en el business google
 - [X] Colocar los datos estructurados, el schema (
     https://developers.google.com/search/docs/appearance/structured-data?hl=es-419
     http://linter.structured-data.org/
