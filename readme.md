@@ -23,7 +23,7 @@
 - [X] Corregir el tema del hover que se queda pegado en celular
 - [X] Hacer la meta descripción
 - [X] Colocar los metadatos que van en el header para que al compartir la web por redes sociales se despliegue una imagen
-- [ ] Colocar los trakers de google Analytics
+- [X] Colocar los trakers de google Analytics
 - [ ] Colocar los trakers de Clarity
 - [ ] Colocar los trakers de Search Console
 - [ ] Colocar los trakers de tarjeta en el business google
