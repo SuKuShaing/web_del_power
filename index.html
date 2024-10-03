@@ -48,11 +48,58 @@
         })(window, document, "clarity", "script", "od0n4w2k2y");
     </script>
 
+    <!-- Schema -->
+    <!-- El Primer schema es de LocalBusiness -->
+    <!-- El Segundo schema es de Service -->
+    <!-- El Tercero schema es de Product/Offer: -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Envíos Power Miami",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Placer 623 galpón 6 local 15 y 16",
+                "addressLocality": "Santiago",
+                "addressRegion": "RM",
+                "postalCode": "8361355",
+                "addressCountry": "Chile"
+            },
+            "telephone": "+17866857978",
+            "url": "https://enviospowermiami.cl"
+        }
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Envíos internacionales",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "Envíos Power Miami"
+            },
+            "areaServed": {
+                "@type": "Place",
+                "name": "Chile, Miami, USA"
+            }
+        }
+        {
+            "@context": "https://schema.org",
+            "@type": "Offer",
+            "itemOffered": {
+                "@type": "Service",
+                "name": "Personal Shopper, Envío aéreo de USA a Chile",
+                "description": "Servicio de Personal Shopper con envío puerta a puerta de paquetes aéreos desde Miami a Chile.",
+                "areaServed": "Chile",
+                "priceCurrency": "USD",
+                "price": "Valor según pedido"
+            }
+        }          
+    </script>
 </head>
+
 <body>
     <header>
         <a href="./index.html">
-            <img loading="lazy" src="./img/Iconos/logo power sin bordes.svg" alt="Logo Envios Power Miami">
+            <img loading="lazy" src="./img/Iconos/logo power sin bordes.svg" alt="Logo Envíos Power Miami">
         </a>
         <h1>Proveedor de ropa original directo de Miami USA</h1>
     </header>
@@ -73,16 +120,16 @@
                 <input type="radio" name="r" id="r4">
 
                 <div class="carrucel-slide s1">
-                    <img src="./img/Fotos para la web/mostrando la tienda.webp" alt="Tienda Envios Power Miami en el BioBio">
+                    <img src="./img/Fotos para la web/mostrando la tienda.webp" alt="Tienda Envíos Power Miami en el BioBio">
                 </div>
                 <div class="carrucel-slide">
-                    <img loading="lazy" src="./img/Fotos para la web/Posando con maleta.webp" alt="Personal Shoper de Envios Power Miami mostrado maleta">
+                    <img loading="lazy" src="./img/Fotos para la web/Posando con maleta.webp" alt="Personal Shopper de Envíos Power Miami mostrado maleta">
                 </div>
                 <div class="carrucel-slide">
-                    <img loading="lazy" src="./img/Fotos para la web/Gorro y zapatos.webp" alt="Envios Power Miami Mostrando zapatillas Coach">
+                    <img loading="lazy" src="./img/Fotos para la web/Gorro y zapatos.webp" alt="Envíos Power Miami Mostrando zapatillas Coach">
                 </div>
                 <div class="carrucel-slide">
-                    <img loading="lazy" src="./img/Fotos para la web/mostrando chaqueta.webp" alt="Personal Shoper de Envios Power Miami Mostrando chaqueta">
+                    <img loading="lazy" src="./img/Fotos para la web/mostrando chaqueta.webp" alt="Personal Shopper de Envíos Power Miami Mostrando chaqueta">
                 </div>
             </div>
             <div class="navegation-carrucel">

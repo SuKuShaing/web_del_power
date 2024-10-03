@@ -25,9 +25,9 @@
 - [X] Colocar los metadatos que van en el header para que al compartir la web por redes sociales se despliegue una imagen
 - [X] Colocar los trakers de google Analytics
 - [X] Colocar los trakers de Clarity
-- [ ] Colocar los trakers de Search Console
+- [X] Colocar los trakers de Search Console
 - [ ] Colocar los trakers de tarjeta en el business google
-- [ ] Colocar los datos estructurados, el schema (
+- [X] Colocar los datos estructurados, el schema (
     https://developers.google.com/search/docs/appearance/structured-data?hl=es-419
     http://linter.structured-data.org/
     )
