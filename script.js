@@ -69,3 +69,31 @@ function detenerIntervalo(){
 
 // Iniciar el intervalo cuando la página se carga
 iniciarIntervalo();
+
+// carga el iframe del mapa cuando el usuario lo vea
+document.addEventListener("DOMContentLoaded", function() {
+    const mapContainer = document.getElementById('map-container');
+    const mapSrc = mapContainer.getAttribute('data-src');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const iframe = document.createElement('iframe');
+                iframe.setAttribute('src', mapSrc);
+                iframe.setAttribute('width', '100%');
+                iframe.setAttribute('height', '400');
+                iframe.setAttribute('style', 'border:0;');
+                iframe.setAttribute('allowfullscreen', '');
+                iframe.setAttribute('referrerpolicy', 'no-referrer-when-downgrade');
+                iframe.setAttribute('loading', 'lazy');
+                iframe.setAttribute('title', 'Ubicación de la tienda mostrada en un mapa de google maps');
+                mapContainer.appendChild(iframe);
+                observer.unobserve(mapContainer);
+            }
+        });
+    }, {
+        rootMargin: '0px 0px -200px 0px'
+    });
+
+    observer.observe(mapContainer);
+});
